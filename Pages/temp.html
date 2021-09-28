@@ -5,51 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/length.css" >
+    <link rel="stylesheet" href="/CSS/length.css">
     <title>Quantity Management</title>
     <link rel="icon" href="/Assets/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <h2 style="text-align: left;">Quanment
-    <span style="float: right;">History</span></h2>
-    
-        <header class="header">
-            <h1>Welcome To Quantity Measurement</h1>
-        </header>
-    <h3>CHOOSE TYPE</h3>
-<div class="container">
-    <button class="button length" type="button" ><a href="/pages/length.html"><img src="/Assets/scale (1).svg" ><br>Length</button>
-    <button class="button temperature" type="button"><img src="/Assets/hot.svg"><br>Temperature</a></button>
-    <button class="button volume" type="button"><a href="/pages/volume.html"><img src="/Assets/beaker (1).svg"><br>Volume</a></button>
-</div>
+    <h2>Quanment
+        <span>History</span>
+    </h2>
 
-<div class="main">
-<div class="from">
-    <div><h6>FROM</h6></div>
-    <div class="input-text">
-        <input type="text" class="Convert" placeholder="0" id="text1" name="text"> 
-    </div>
-        <select name="length" id="temp1" class="select">
-            <option value="celsius">Celcius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-        </select>
-</div>
-<div class="to">
-    <div><h6>TO</h6></div>
-    <div class="input-text">
-        <input type="text" class="Convert" placeholder="32" id="text2" name="text"> 
-    </div>
-        <select name="length" id="temp2" class="select">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="Kelvin">Kelvin</option>
-        </select>
-</div>
+    <header class="header">
+        <h1>Welcome To Quantity Measurement</h1>
+    </header>
+    <div class="main-content">
+        <h3>CHOOSE TYPE</h3>
+        <div class="container">
+            <button class="button length" type="button"><a href="/pages/length.html"><img
+                        src="/Assets/scale (1).svg"><br>Length</button>
+            <button class="button temperature" type="button"><img src="/Assets/hot.svg"><br>Temperature</a></button>
+            <button class="button volume" type="button"><a href="/pages/volume.html"><img
+                        src="/Assets/beaker (1).svg"><br>Volume</a></button>
+        </div>
+
+        <div class="main">
+            <div class="from">
+                <div>
+                    <h6>FROM</h6>
+                </div>
+                <div class="input-text">
+                    <input type="number" class="Convert" placeholder="0" id="text1" oninput="validate(this)">
+                </div>
+                <select name="length" id="temp1" class="select">
+                    <option value="celsius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="to">
+                <div>
+                    <h6>TO</h6>
+                </div>
+                <div class="input-text">
+                    <input type="number" class="Convert" placeholder="32" id="text2" oninput="validate(this)">
+                </div>
+                <select name="length" id="temp2" class="select">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
 </body>
 <script src="/JS/tempConvertor.js"></script>
+<script src="/JS/button.js"></script>
+
 </html>

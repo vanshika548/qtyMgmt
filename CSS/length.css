@@ -2,7 +2,7 @@ html,body{
     background: #f6f5f2;
     margin: 0px;
     padding: 0px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat' , sans-serif;
 }
 
 .header{
@@ -16,6 +16,16 @@ html,body{
 
 span{
     font-size: 10px;
+    float: right; 
+    margin-right: 179px;
+}
+
+h2{
+    text-align: left; 
+    margin-left: 212px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 21px;
+    margin-bottom: 10px;
 }
 
 a{
@@ -23,10 +33,13 @@ a{
     color: black;
 }
 
-h3{
-    justify-content: center;
-    display: flex;
-}
+ h3{
+    /* justify-content: center;
+    display: flex; */
+    margin-left: 678px;
+    font-family: 'Montserrat medium' , sans-serif; 
+    font-size: 15px;
+} 
 
 .container{
     height: 100%;
@@ -37,11 +50,9 @@ h3{
 }
 
 .button{
-    margin-right: 10px;
+    margin-right: 40px;
     height: 150px;
     width: 150px;
-    justify-content: center;
-    align-items: center;
     background: white;
     border: none;
     cursor: pointer;
@@ -68,7 +79,6 @@ h3{
 .main{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .from{
@@ -76,14 +86,15 @@ h3{
 }
 
 .select{
-    width: 200px;
-    height:50px;
+    width: 280px;
+    height:45px;
     background: white;
     border: none;
 }
 
 .Convert{
-    width: 196px;
+    width: 276px;
+    height: 60px;
     border: none;
 }
 
@@ -96,53 +107,53 @@ h6{
     opacity: 0.5;
 }
 
-.main-content{
-    justify-content: center;
-    align-items: center;
+.active,.length:hover{
+    border: #0EC098 solid 1px;
+    background: #EDFDF9;
+    border-radius: 5px;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
     /* iphone 11 pro */
-  .container{
-      display: flex;
-      flex-flow: column;
+  .header{
+      width: 100%;
+      font-size: 10px;
+      margin-bottom: 2px;
   }
+   h2{
+       margin-left: 10px;
+       font-size: 10px;
+   }
+   span{
+       margin-right: 5px;
+       font-size: 7px;
+       margin-top: 5px;
+   }
 
-  .button{
-      margin-bottom: 10px;
-  }
+   .container{
+       display: flex;
+       flex-flow: column;
+   }
 
-  h1{
-      font-size: 20px;
-  }
+   .button{
+       margin-bottom: 10px;
+       height: 90px;
+       width: 250px;
+   }
 
-  .main{
-      display: flex;
-      flex-flow: column;
-  }
+   .main{
+       display: flex;
+       flex-flow: row;
+   }
 
-  .from{
-     margin-left: 90px;
-  }
+   .Convert{
+       width: 108px;
+   }
 
-  .to{
-      margin-bottom: 20px;
-  }
+   .select{
+       width: 112px;
+   }
 
-  .button{
-      width: 90px;
-      height: 80px;
-      justify-content: center;
-      margin-bottom: 10px;
-  }
-
-  .select{
-      width: 250px;
-  }
-
-  .Convert{
-      width: 246px;
-  }
 }
 
 @media only screen 
@@ -152,4 +163,19 @@ h6{
         .from{
             margin-left: 95px;
         }
+}
+
+/* I pad mini */
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    h3{
+       margin-left: 102px;
     }
+
+    h2{
+        margin-left: 20px;
+    }
+
+    span{
+        margin-right: 10px;
+    }
+}
